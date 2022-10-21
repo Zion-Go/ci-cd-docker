@@ -15,6 +15,7 @@ jobs:
             -
                 name: List docker images
                 run: docker images
+    #run jobs separately
     image-runner:       
            name: the main job
            runs-on: ubuntu-lateset
