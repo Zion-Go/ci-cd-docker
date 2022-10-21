@@ -1,0 +1,11 @@
+on:
+    push
+jobs:
+    idle:
+        runs-on: ubuntu-latest
+        steps:
+            -
+                run: |
+                     echo Idle Step
+                     sleep 20
+                     echo Wake up
