@@ -15,11 +15,12 @@ jobs:
             -
                 name: List docker images
                 run: docker images
-    #run jobs separately
+    #run jobs separately with demonstrating image-runner
+    #image_runner_merged without demonstrating image-runner, 
     image-runner:       
            name: the main job
            runs-on: ubuntu-lateset
-           needs: image_building
+           needs: image-builder
            steps:
            -
                 name: Run the image
