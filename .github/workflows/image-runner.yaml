@@ -15,6 +15,11 @@ jobs:
             -
                 name: List docker images
                 run: docker images
-            -
+    image-runner:       
+           name: the main job
+           runs-on: ubuntu-lateset
+           needs: image_building
+           steps:
+           -
                 name: Run the image
                 run: docker run --rm -t my_image
