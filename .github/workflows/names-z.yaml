@@ -1,0 +1,13 @@
+n:
+    push
+jobs:
+    idle:
+        name: the only job
+        runs-on: ubuntu-latest
+        steps:
+            -
+                name: the only step
+                run: |
+                     echo Idle Step
+                     sleep 20
+                     echo Wake up
